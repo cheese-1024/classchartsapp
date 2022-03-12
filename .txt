@@ -1,0 +1,15 @@
+import { ClasschartsClient } from "classcharts-api";
+async function main() {
+  const client = new ClasschartsClient("classchartsCode", "01/1/2000");
+  await client.login();
+  console.log(
+    await client.getBehaviour({
+    })
+  );
+  console.log(await client.getActivity());
+  console.log(await client.getStudentInfo());
+  console.log(await client.getActivity());
+  console.log(await client.getActivity());
+}
+
+main();
